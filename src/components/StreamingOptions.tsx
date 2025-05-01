@@ -11,11 +11,11 @@ const StreamingOptions = () => {
       <div className="container mx-auto px-4">
         {/* Section Title */}
         <div className="mb-16 max-w-2xl">
-          <h2 className="text-4xl md:text-5xl text-click-teal font-medium mb-6">
+          <h2 className="text-4xl md:text-5xl text-nuvik-blue font-medium mb-6">
             EL STREAMING QUE QUIERAS
           </h2>
           <p className="text-gray-700 text-lg">
-            En CLICK, ofrecemos una amplia variedad de opciones de 
+            En NUVIK, ofrecemos una amplia variedad de opciones de 
             entretenimiento en streaming para que puedas disfrutar en la 
             comodidad de tu hogar.
           </p>
@@ -51,17 +51,17 @@ const StreamingOptions = () => {
           {/* Music Streaming Card */}
           <Card className="flex flex-col overflow-hidden bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
             <div className="mb-6 rounded-lg overflow-hidden">
-              <AspectRatio ratio={16/9} className="bg-gradient-to-r from-click-teal/40 to-click-darkblue/40">
-                <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-click-teal/20 to-click-darkblue/20">
+              <AspectRatio ratio={16/9} className="bg-gradient-to-r from-nuvik-blue/40 to-nuvik-darkgray/40">
+                <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-nuvik-blue/20 to-nuvik-darkgray/20">
                   <img src="https://cdn-icons-png.flaticon.com/512/3844/3844724.png" alt="Music icon" className="w-20 h-20 mb-6 filter drop-shadow-xl" />
                   <div className="flex items-center justify-center space-x-4 bg-white/10 backdrop-blur-sm p-4 rounded-full shadow-lg">
-                    <SkipBack className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
-                    <div className="bg-white rounded-full p-3 shadow-md hover:bg-click-teal/90 transition-colors cursor-pointer">
-                      <Play className="w-6 h-6 text-click-darkblue" />
+                    <SkipBack className="w-6 h-6 text-white hover:text-nuvik-blue cursor-pointer transition-colors" />
+                    <div className="bg-white rounded-full p-3 shadow-md hover:bg-nuvik-blue/90 transition-colors cursor-pointer">
+                      <Play className="w-6 h-6 text-nuvik-darkgray" />
                     </div>
-                    <Pause className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
-                    <SkipForward className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
-                    <Shuffle className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
+                    <Pause className="w-6 h-6 text-white hover:text-nuvik-blue cursor-pointer transition-colors" />
+                    <SkipForward className="w-6 h-6 text-white hover:text-nuvik-blue cursor-pointer transition-colors" />
+                    <Shuffle className="w-6 h-6 text-white hover:text-nuvik-blue cursor-pointer transition-colors" />
                   </div>
                 </div>
               </AspectRatio>
@@ -94,7 +94,7 @@ const StreamingOptions = () => {
             <div className="px-4 pb-5">
               <h3 className="text-xl font-medium mb-3">Deportes en vivo y tus ligas preferidas en tu suscripción.</h3>
               <p className="text-gray-600 text-sm mb-4">
-                Con Click tienes acceso a la UEFA Champions League, UEFA Europa League, 
+                Con Nuvik tienes acceso a la UEFA Champions League, UEFA Europa League, 
                 Premier League, Ligue 1, Serie A, NBA, ATP Tour y más.
               </p>
               <div className="flex mt-4">

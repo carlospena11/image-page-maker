@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Colores personalizados para el sitio Click
-				click: {
-					teal: '#00B398',
-					darkblue: '#003c55',
-					lightgreen: '#8BFCE7',
-					lightblue: '#EBF8FF'
+				// Nuvik brand color palette
+				nuvik: {
+					darkgray: '#333333',
+					blue: '#1AA7E2',
+					green: '#A3CC39',
+					lightgray: '#F2F2F2'
 				}
 			},
 			borderRadius: {

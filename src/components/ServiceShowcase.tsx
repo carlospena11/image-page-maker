@@ -33,9 +33,9 @@ const ServiceShowcase = () => {
   ];
 
   return (
-    <div className="bg-click-lightblue py-16">
+    <div className="bg-nuvik-lightgray py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-medium text-gray-800 text-center mb-12">
+        <h2 className="text-3xl font-medium text-nuvik-darkgray text-center mb-12">
           Nuestros servicios funcionan aún mejor juntos
         </h2>
         
@@ -43,7 +43,7 @@ const ServiceShowcase = () => {
           {services.map((service, index) => (
             <Card key={index} className="flex flex-col items-center p-3 bg-white hover:shadow-lg transition-shadow cursor-pointer overflow-hidden border-none">
               <div className="w-full rounded-lg overflow-hidden mb-4">
-                <AspectRatio ratio={1} className="bg-gradient-to-br from-click-teal/10 to-click-darkblue/10">
+                <AspectRatio ratio={1} className="bg-gradient-to-br from-nuvik-blue/10 to-nuvik-green/10">
                   <div className="w-full h-full relative flex items-center justify-center group">
                     <img 
                       src={service.image} 

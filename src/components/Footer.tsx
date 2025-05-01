@@ -22,13 +22,17 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#003c55] text-white">
+    <footer className="bg-nuvik-darkgray text-white">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-6">
           {/* Logo y descripción */}
           <div className="col-span-1">
             <div className="mb-6">
-              <h2 className="text-3xl font-bold text-white mb-4">click!</h2>
+              <img 
+                src="/lovable-uploads/65e06ba4-3259-43e6-8d47-f068992c766d.png" 
+                alt="Nuvik Logo" 
+                className="h-12 mb-4" 
+              />
               <p className="text-sm text-gray-300">
                 La mejor conexión a internet de fibra óptica con ultra velocidad y la última tecnología
               </p>
@@ -36,16 +40,16 @@ const Footer = () => {
             
             {/* Iconos de redes sociales */}
             <div className="flex space-x-3 mt-6">
-              <a href="#" className="bg-[#004c6a] p-2 rounded">
+              <a href="#" className="bg-nuvik-blue bg-opacity-50 p-2 rounded">
                 <Facebook size={16} />
               </a>
-              <a href="#" className="bg-[#004c6a] p-2 rounded">
+              <a href="#" className="bg-nuvik-blue bg-opacity-50 p-2 rounded">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="bg-[#004c6a] p-2 rounded">
+              <a href="#" className="bg-nuvik-blue bg-opacity-50 p-2 rounded">
                 <Twitter size={16} />
               </a>
-              <a href="#" className="bg-[#004c6a] p-2 rounded">
+              <a href="#" className="bg-nuvik-blue bg-opacity-50 p-2 rounded">
                 <Youtube size={16} />
               </a>
             </div>
@@ -84,7 +88,7 @@ const Footer = () => {
               />
               <Button 
                 type="submit" 
-                className="w-full bg-click-teal hover:bg-opacity-90 transition-colors"
+                className="w-full bg-nuvik-blue hover:bg-opacity-90 transition-colors"
               >
                 SUSCRIBIRSE
               </Button>
@@ -93,11 +97,11 @@ const Footer = () => {
         </div>
         
         {/* Línea divisoria */}
-        <div className="border-t border-[#004c6a] my-8"></div>
+        <div className="border-t border-gray-700 my-8"></div>
         
         {/* Pie de página */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>Copyright © 2023 Click!. Todos los derechos reservados</p>
+          <p>Copyright © 2025 Nuvik. Todos los derechos reservados</p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a href="#" className="hover:text-white">Términos del servicio</a>
             <span>|</span>

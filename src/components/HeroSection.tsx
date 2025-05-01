@@ -4,10 +4,17 @@ import Button from './Button';
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-click-teal to-click-darkblue">
+    <section className="w-full bg-gradient-to-r from-nuvik-blue to-nuvik-darkgray">
       <div className="container mx-auto flex flex-col lg:flex-row">
         {/* Contenido textual */}
         <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center text-white">
+          <div className="mb-6">
+            <img 
+              src="/lovable-uploads/65e06ba4-3259-43e6-8d47-f068992c766d.png" 
+              alt="Nuvik Logo" 
+              className="h-16 object-contain mb-4" 
+            />
+          </div>
           <h1 className="text-4xl lg:text-5xl font-light mb-6">
             Internet fibra óptica para el hogar y el trabajo
           </h1>
@@ -25,7 +32,7 @@ const HeroSection = () => {
         </div>
         
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] bg-click-darkblue relative">
+        <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] bg-nuvik-darkgray relative">
           <img
             src="/lovable-uploads/fd3b827c-ca90-4d65-8292-9c84812e40b7.png"
             alt="Persona usando internet de alta velocidad"

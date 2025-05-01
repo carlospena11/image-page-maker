@@ -20,9 +20,9 @@ const Button = ({
       className={cn(
         "font-medium rounded transition-colors",
         {
-          'bg-click-teal text-white hover:bg-opacity-90': variant === 'primary',
+          'bg-nuvik-blue text-white hover:bg-opacity-90': variant === 'primary',
           'bg-transparent border border-white text-white hover:bg-white hover:bg-opacity-10': variant === 'outline',
-          'bg-white text-click-darkblue hover:bg-gray-100': variant === 'white',
+          'bg-white text-nuvik-darkgray hover:bg-gray-100': variant === 'white',
           'px-3 py-1.5 text-sm': size === 'sm',
           'px-5 py-2': size === 'md',
           'px-6 py-3': size === 'lg',
