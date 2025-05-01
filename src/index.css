@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,15 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-light;
+  }
+}
+
+/* Estilos personalizados para click! */
+.bg-gradient-click {
+  background: linear-gradient(90deg, #00B398 0%, #003c55 100%);
 }

@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Colores personalizados para el sitio Click
+				click: {
+					teal: '#00B398',
+					darkblue: '#003c55',
+					lightgreen: '#8BFCE7',
+					lightblue: '#EBF8FF'
 				}
 			},
 			borderRadius: {
