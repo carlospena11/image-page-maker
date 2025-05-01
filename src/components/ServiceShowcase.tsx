@@ -1,6 +1,5 @@
 
 import React from 'react';
-import Button from './Button';
 
 const ServiceShowcase = () => {
   const services = [
@@ -37,26 +36,28 @@ const ServiceShowcase = () => {
   ];
 
   return (
-    <div className="container mx-auto py-16 px-4">
-      <h2 className="text-3xl font-medium text-gray-800 text-center mb-12">
-        Nuestros servicios funcionan aún mejor juntos
-      </h2>
-      
-      <div className="flex flex-wrap justify-center gap-8 mb-8">
-        {services.map((service, index) => (
-          <div key={index} className="flex flex-col items-center max-w-[200px]">
-            <div className="bg-gray-50 rounded-lg p-4 mb-4 w-36 h-36 flex items-center justify-center">
-              <div 
-                className="w-full h-full bg-contain bg-no-repeat bg-center"
-                style={{
-                  backgroundImage: `url(${service.image})`,
-                  backgroundPosition: service.imagePosition
-                }}
-              />
+    <div className="bg-click-lightblue py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-medium text-gray-800 text-center mb-12">
+          Nuestros servicios funcionan aún mejor juntos
+        </h2>
+        
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+          {services.map((service, index) => (
+            <div key={index} className="flex flex-col items-center">
+              <div className="bg-white rounded-lg shadow-md p-6 mb-4 w-full aspect-square flex items-center justify-center hover:shadow-lg transition-shadow">
+                <div 
+                  className="w-full h-full bg-contain bg-no-repeat bg-center"
+                  style={{
+                    backgroundImage: `url(${service.image})`,
+                    backgroundPosition: service.imagePosition
+                  }}
+                />
+              </div>
+              <p className="text-sm font-medium text-center">{service.name}</p>
             </div>
-            <p className="text-sm font-medium text-center">{service.name}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

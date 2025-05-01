@@ -110,3 +110,14 @@
 .bg-gradient-click {
   background: linear-gradient(90deg, #00B398 0%, #003c55 100%);
 }
+
+.shadow-text {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Añadir transiciones suaves */
+.transition {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
