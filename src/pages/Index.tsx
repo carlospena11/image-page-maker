@@ -5,6 +5,7 @@ import ServiceIcons from '../components/ServiceIcons';
 import HeroSection from '../components/HeroSection';
 import ServiceShowcase from '../components/ServiceShowcase';
 import DisneyPromotion from '../components/DisneyPromotion';
+import StreamingOptions from '../components/StreamingOptions';
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <ServiceShowcase />
       <DisneyPromotion />
+      <StreamingOptions />
     </div>
   );
 };
