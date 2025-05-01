@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Button from './Button';
+import { Button } from '@/components/ui/button';
 
 const DisneyPromotion = () => {
   return (
@@ -36,9 +36,8 @@ const DisneyPromotion = () => {
             incluyendo películas y series.
           </p>
           <Button 
-            variant="white" 
-            size="md" 
-            className="uppercase tracking-wider font-bold"
+            variant="default" 
+            className="uppercase tracking-wider font-bold bg-white text-click-darkblue hover:bg-gray-100"
           >
             Ver planes
           </Button>

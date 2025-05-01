@@ -6,6 +6,8 @@ import HeroSection from '../components/HeroSection';
 import ServiceShowcase from '../components/ServiceShowcase';
 import DisneyPromotion from '../components/DisneyPromotion';
 import StreamingOptions from '../components/StreamingOptions';
+import NewsletterSection from '../components/NewsletterSection';
+import Footer from '../components/Footer';
 
 const Index = () => {
   return (
@@ -16,6 +18,8 @@ const Index = () => {
       <ServiceShowcase />
       <DisneyPromotion />
       <StreamingOptions />
+      <NewsletterSection />
+      <Footer />
     </div>
   );
 };
