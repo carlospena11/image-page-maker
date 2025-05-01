@@ -24,33 +24,35 @@ const StreamingOptions = () => {
         {/* Streaming Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-10">
           {/* Disney+ Card */}
-          <Card className="flex flex-col overflow-hidden bg-white border-none">
-            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+          <Card className="flex flex-col overflow-hidden bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+            <div className="mb-6 rounded-lg overflow-hidden">
               <AspectRatio ratio={16/9} className="bg-black">
                 <img 
-                  src="https://images.unsplash.com/photo-1604149370800-62baef2908c3?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1604149370800-62baef2908c3?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3"
                   alt="Disney+ streaming service" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </AspectRatio>
             </div>
-            <h3 className="text-xl font-medium mb-3">Las mejores películas, documentales y series.</h3>
-            <p className="text-gray-600 text-sm">
-              Los títulos más recientes y aclamados de Disney, Pixar, Marvel, Star Wars y 
-              National Geographic, así como a programas originales exclusivos
-            </p>
-            <div className="flex mt-6 space-x-4">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/1200px-Disney%2B_logo.svg.png" alt="Disney logo" className="h-6 object-contain" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pixar_logo.svg/2560px-Pixar_logo.svg.png" alt="Pixar logo" className="h-6 object-contain" />
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/2560px-MarvelLogo.svg.png" alt="Marvel logo" className="h-6 object-contain" />
+            <div className="px-4 pb-5">
+              <h3 className="text-xl font-medium mb-3">Las mejores películas, documentales y series.</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Los títulos más recientes y aclamados de Disney, Pixar, Marvel, Star Wars y 
+                National Geographic, así como a programas originales exclusivos
+              </p>
+              <div className="flex mt-4 space-x-4 items-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/1200px-Disney%2B_logo.svg.png" alt="Disney logo" className="h-6 object-contain" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pixar_logo.svg/2560px-Pixar_logo.svg.png" alt="Pixar logo" className="h-6 object-contain" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/2560px-MarvelLogo.svg.png" alt="Marvel logo" className="h-6 object-contain" />
+              </div>
             </div>
           </Card>
 
           {/* Music Streaming Card */}
-          <Card className="flex flex-col overflow-hidden bg-white border-none">
-            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+          <Card className="flex flex-col overflow-hidden bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+            <div className="mb-6 rounded-lg overflow-hidden">
               <AspectRatio ratio={16/9} className="bg-gradient-to-r from-click-teal/40 to-click-darkblue/40">
-                <div className="w-full h-full flex flex-col items-center justify-center p-6">
+                <div className="w-full h-full flex flex-col items-center justify-center p-6 bg-gradient-to-br from-click-teal/20 to-click-darkblue/20">
                   <img src="https://cdn-icons-png.flaticon.com/512/3844/3844724.png" alt="Music icon" className="w-20 h-20 mb-6 filter drop-shadow-xl" />
                   <div className="flex items-center justify-center space-x-4 bg-white/10 backdrop-blur-sm p-4 rounded-full shadow-lg">
                     <SkipBack className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
@@ -64,31 +66,40 @@ const StreamingOptions = () => {
                 </div>
               </AspectRatio>
             </div>
-            <h3 className="text-xl font-medium mb-3">Música ilimitada, sin anuncios y en todos tus dispositivos</h3>
-            <p className="text-gray-600 text-sm">
-              Añadí Spotify premium a tu plan, disfruta YouTube music al elegir YouTube 
-              premium o contratá Apple Music por un costo adicional en tu plan mensual.
-            </p>
+            <div className="px-4 pb-5">
+              <h3 className="text-xl font-medium mb-3">Música ilimitada, sin anuncios y en todos tus dispositivos</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Añadí Spotify premium a tu plan, disfruta YouTube music al elegir YouTube 
+                premium o contratá Apple Music por un costo adicional en tu plan mensual.
+              </p>
+              <div className="flex mt-4 space-x-3 items-center">
+                <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png" alt="Spotify logo" className="h-6 object-contain" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="YouTube logo" className="h-5 object-contain" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Apple_Music_logo.svg/2560px-Apple_Music_logo.svg.png" alt="Apple Music logo" className="h-5 object-contain" />
+              </div>
+            </div>
           </Card>
 
           {/* Sports Streaming Card */}
-          <Card className="flex flex-col overflow-hidden bg-white border-none">
-            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+          <Card className="flex flex-col overflow-hidden bg-white border-none shadow-lg hover:shadow-xl transition-shadow">
+            <div className="mb-6 rounded-lg overflow-hidden">
               <AspectRatio ratio={16/9} className="bg-black">
                 <img 
-                  src="https://images.unsplash.com/photo-1579710758949-3ab56a3e6a33?q=80&w=1000&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1579710758949-3ab56a3e6a33?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3"
                   alt="Sports streaming" 
-                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
                 />
               </AspectRatio>
             </div>
-            <h3 className="text-xl font-medium mb-3">Deportes en vivo y tus ligas preferidas en tu suscripción.</h3>
-            <p className="text-gray-600 text-sm">
-              Con Click tienes acceso a la UEFA Champions League, UEFA Europa League, 
-              Premier League, Ligue 1, Serie A, NBA, ATP Tour y más.
-            </p>
-            <div className="flex mt-6">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_logo.svg/2560px-ESPN_logo.svg.png" alt="ESPN logo" className="h-6 object-contain" />
+            <div className="px-4 pb-5">
+              <h3 className="text-xl font-medium mb-3">Deportes en vivo y tus ligas preferidas en tu suscripción.</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                Con Click tienes acceso a la UEFA Champions League, UEFA Europa League, 
+                Premier League, Ligue 1, Serie A, NBA, ATP Tour y más.
+              </p>
+              <div className="flex mt-4">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_logo.svg/2560px-ESPN_logo.svg.png" alt="ESPN logo" className="h-5 object-contain" />
+              </div>
             </div>
           </Card>
         </div>

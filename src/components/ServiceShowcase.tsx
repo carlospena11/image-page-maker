@@ -7,27 +7,27 @@ const ServiceShowcase = () => {
   const services = [
     {
       name: 'Internet Fibra Óptica',
-      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3',
       icon: 'https://cdn-icons-png.flaticon.com/512/1197/1197466.png'
     },
     {
       name: 'TV streaming',
-      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3',
       icon: 'https://cdn-icons-png.flaticon.com/512/2586/2586717.png'
     },
     {
       name: 'Música streaming',
-      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3',
       icon: 'https://cdn-icons-png.flaticon.com/512/3059/3059884.png'
     },
     {
       name: 'Smart Home y CCTV',
-      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3',
       icon: 'https://cdn-icons-png.flaticon.com/512/1165/1165544.png'
     },
     {
       name: 'Gaming & e-sports',
-      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3',
       icon: 'https://cdn-icons-png.flaticon.com/512/686/686589.png'
     }
   ];
@@ -44,11 +44,11 @@ const ServiceShowcase = () => {
             <Card key={index} className="flex flex-col items-center p-3 bg-white hover:shadow-lg transition-shadow cursor-pointer overflow-hidden border-none">
               <div className="w-full rounded-lg overflow-hidden mb-4">
                 <AspectRatio ratio={1} className="bg-gradient-to-br from-click-teal/10 to-click-darkblue/10">
-                  <div className="w-full h-full relative flex items-center justify-center">
+                  <div className="w-full h-full relative flex items-center justify-center group">
                     <img 
                       src={service.image} 
                       alt={service.name}
-                      className="w-full h-full object-cover opacity-30 absolute inset-0"
+                      className="w-full h-full object-cover opacity-30 absolute inset-0 transition-transform duration-500 group-hover:scale-110"
                     />
                     <img 
                       src={service.icon} 

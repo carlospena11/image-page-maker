@@ -11,7 +11,8 @@ const DisneyPromotion = () => {
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center z-0"
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1470&auto=format&fit=crop')", 
+          backgroundImage: "url('https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3')", 
+          backgroundPosition: '25% center'
         }}
       ></div>
       
