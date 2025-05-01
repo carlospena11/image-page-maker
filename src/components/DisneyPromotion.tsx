@@ -17,7 +17,7 @@ const DisneyPromotion = () => {
       ></div>
       
       {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-nuvik-darkgray/80 via-nuvik-darkgray/60 to-transparent z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent z-10"></div>
       
       <div className="container mx-auto px-6 relative z-20">
         <div className="max-w-lg">
@@ -37,7 +37,7 @@ const DisneyPromotion = () => {
           </p>
           <Button 
             variant="default" 
-            className="uppercase tracking-wider font-bold bg-white text-nuvik-darkgray hover:bg-gray-100"
+            className="uppercase tracking-wider font-bold bg-white text-click-darkblue hover:bg-gray-100"
           >
             Ver planes
           </Button>

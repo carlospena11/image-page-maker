@@ -14,7 +14,7 @@ const ServiceIcons = () => {
   ];
 
   return (
-    <div className="w-full bg-nuvik-green py-8">
+    <div className="w-full bg-click-lightgreen py-8">
       <div className="container mx-auto">
         <div className="grid grid-cols-4 md:grid-cols-7 gap-4 text-center px-4">
           {services.map((service, index) => (
@@ -23,9 +23,9 @@ const ServiceIcons = () => {
               className="flex flex-col items-center justify-center p-2 rounded-lg transition cursor-pointer hover:bg-white hover:bg-opacity-40"
             >
               <div className="bg-white rounded-full p-3 mb-2 shadow-md">
-                <service.icon className="h-5 w-5 text-nuvik-blue" />
+                <service.icon className="h-5 w-5 text-click-teal" />
               </div>
-              <span className="text-xs font-medium mt-1 text-nuvik-darkgray">{service.name}</span>
+              <span className="text-xs font-medium mt-1">{service.name}</span>
             </div>
           ))}
         </div>
