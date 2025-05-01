@@ -1,10 +1,10 @@
 
 import React from 'react';
-import { Internet, Tv, Music, Gamepad, Home, Layers } from 'lucide-react';
+import { Wifi, Tv, Music, Gamepad, Home, Layers } from 'lucide-react';
 
 const ServiceIcons = () => {
   const services = [
-    { name: 'Internet', icon: Internet },
+    { name: 'Internet', icon: Wifi },
     { name: 'Streaming', icon: Tv },
     { name: 'Música', icon: Music },
     { name: 'TV en vivo', icon: Tv },
