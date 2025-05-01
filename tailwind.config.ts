@@ -63,12 +63,12 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Nuvik brand color palette
+				// Nuvik brand color palette - UPDATED
 				nuvik: {
-					darkgray: '#333333',
-					blue: '#1AA7E2',
-					green: '#A3CC39',
-					lightgray: '#F2F2F2'
+					darkgray: '#2C3E50', // Changed from #333333 to a more blue-tinted dark
+					blue: '#3498DB',      // Changed from #1AA7E2 to a more vibrant blue
+					green: '#2ECC71',     // Changed from #A3CC39 to a more vibrant green
+					lightgray: '#ECF0F1'  // Changed from #F2F2F2 to a slightly blue-tinted light gray
 				}
 			},
 			borderRadius: {
@@ -102,3 +102,4 @@ export default {
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+

@@ -108,7 +108,7 @@
 
 /* Estilos personalizados para Nuvik */
 .bg-gradient-nuvik {
-  background: linear-gradient(90deg, #1AA7E2 0%, #333333 100%);
+  background: linear-gradient(90deg, #3498DB 0%, #2C3E50 100%);
 }
 
 .shadow-text {
@@ -121,3 +121,4 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
 }
+
