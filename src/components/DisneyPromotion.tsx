@@ -37,7 +37,7 @@ const DisneyPromotion = () => {
           </p>
           <Button 
             variant="default" 
-            className="uppercase tracking-wider font-bold bg-white text-click-darkblue hover:bg-gray-100"
+            className="uppercase tracking-wider font-bold bg-white text-nuvik-gray hover:bg-gray-100"
           >
             Ver planes
           </Button>

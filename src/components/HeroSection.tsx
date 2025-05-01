@@ -4,7 +4,7 @@ import Button from './Button';
 
 const HeroSection = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-click-teal to-click-darkblue">
+    <section className="w-full bg-gradient-to-r from-nuvik-blue to-nuvik-gray">
       <div className="container mx-auto flex flex-col lg:flex-row">
         {/* Contenido textual */}
         <div className="w-full lg:w-1/2 p-8 lg:p-16 flex flex-col justify-center text-white">
@@ -25,7 +25,7 @@ const HeroSection = () => {
         </div>
         
         {/* Imagen */}
-        <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] bg-click-darkblue relative">
+        <div className="w-full lg:w-1/2 min-h-[400px] lg:min-h-[600px] bg-nuvik-gray relative">
           <img
             src="/lovable-uploads/fd3b827c-ca90-4d65-8292-9c84812e40b7.png"
             alt="Persona usando internet de alta velocidad"

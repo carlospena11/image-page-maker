@@ -20,7 +20,7 @@ const NewsletterSection = () => {
   };
 
   return (
-    <section className="w-full bg-click-teal py-16">
+    <section className="w-full bg-nuvik-blue py-16">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-4xl font-light text-white mb-3">RECIBE NUESTRAS OFERTAS</h2>
@@ -39,7 +39,7 @@ const NewsletterSection = () => {
             />
             <Button 
               type="submit" 
-              className="bg-white text-orange-500 hover:bg-gray-100 font-medium px-8 h-12"
+              className="bg-white text-nuvik-gray hover:bg-gray-100 font-medium px-8 h-12"
             >
               Subscribe
             </Button>
