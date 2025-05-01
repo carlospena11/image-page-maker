@@ -2,6 +2,8 @@
 import React from 'react';
 import { SkipBack, Play, Pause, SkipForward, Shuffle } from 'lucide-react';
 import Button from './Button';
+import { AspectRatio } from './ui/aspect-ratio';
+import { Card } from './ui/card';
 
 const StreamingOptions = () => {
   return (
@@ -22,55 +24,63 @@ const StreamingOptions = () => {
         {/* Streaming Services Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-10">
           {/* Disney+ Card */}
-          <div className="flex flex-col">
-            <div className="mb-6 shadow-md rounded-md overflow-hidden">
-              <img 
-                src="/lovable-uploads/d4728c89-990d-4535-8234-eb6afecc87bd.png" 
-                alt="Disney+ streaming service" 
-                className="w-full object-cover"
-                style={{maxHeight: "250px", objectPosition: "0% 0%"}}
-              />
+          <Card className="flex flex-col overflow-hidden bg-white border-none">
+            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+              <AspectRatio ratio={16/9} className="bg-black">
+                <img 
+                  src="https://images.unsplash.com/photo-1604149370800-62baef2908c3?q=80&w=1000&auto=format&fit=crop"
+                  alt="Disney+ streaming service" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                />
+              </AspectRatio>
             </div>
             <h3 className="text-xl font-medium mb-3">Las mejores películas, documentales y series.</h3>
             <p className="text-gray-600 text-sm">
-              Ls títulos más recientes y aclamados de Disney, Pixar, Marvel, Star Wars y 
+              Los títulos más recientes y aclamados de Disney, Pixar, Marvel, Star Wars y 
               National Geographic, así como a programas originales exclusivos
             </p>
-            <div className="flex mt-6 space-x-3">
+            <div className="flex mt-6 space-x-4">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Disney%2B_logo.svg/1200px-Disney%2B_logo.svg.png" alt="Disney logo" className="h-6 object-contain" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Pixar_logo.svg/2560px-Pixar_logo.svg.png" alt="Pixar logo" className="h-6 object-contain" />
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/2560px-MarvelLogo.svg.png" alt="Marvel logo" className="h-6 object-contain" />
             </div>
-          </div>
+          </Card>
 
           {/* Music Streaming Card */}
-          <div className="flex flex-col">
-            <div className="mb-6 shadow-md rounded-md overflow-hidden bg-gray-100 py-8 px-6 flex flex-col items-center justify-center" style={{minHeight: "250px"}}>
-              <img src="https://cdn-icons-png.flaticon.com/512/3844/3844724.png" alt="Music icon" className="w-20 h-20 mb-6" />
-              <div className="flex items-center justify-center space-x-4">
-                <SkipBack className="w-6 h-6 text-gray-600" />
-                <Play className="w-10 h-10 text-click-teal p-2 bg-white rounded-full shadow-md" />
-                <Pause className="w-6 h-6 text-gray-600" />
-                <SkipForward className="w-6 h-6 text-gray-600" />
-                <Shuffle className="w-6 h-6 text-gray-600" />
-              </div>
+          <Card className="flex flex-col overflow-hidden bg-white border-none">
+            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+              <AspectRatio ratio={16/9} className="bg-gradient-to-r from-click-teal/40 to-click-darkblue/40">
+                <div className="w-full h-full flex flex-col items-center justify-center p-6">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3844/3844724.png" alt="Music icon" className="w-20 h-20 mb-6 filter drop-shadow-xl" />
+                  <div className="flex items-center justify-center space-x-4 bg-white/10 backdrop-blur-sm p-4 rounded-full shadow-lg">
+                    <SkipBack className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
+                    <div className="bg-white rounded-full p-3 shadow-md hover:bg-click-teal/90 transition-colors cursor-pointer">
+                      <Play className="w-6 h-6 text-click-darkblue" />
+                    </div>
+                    <Pause className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
+                    <SkipForward className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
+                    <Shuffle className="w-6 h-6 text-white hover:text-click-teal cursor-pointer transition-colors" />
+                  </div>
+                </div>
+              </AspectRatio>
             </div>
             <h3 className="text-xl font-medium mb-3">Música ilimitada, sin anuncios y en todos tus dispositivos</h3>
             <p className="text-gray-600 text-sm">
               Añadí Spotify premium a tu plan, disfruta YouTube music al elegir YouTube 
               premium o contratá Apple Music por un costo adicional en tu plan mensual.
             </p>
-          </div>
+          </Card>
 
           {/* Sports Streaming Card */}
-          <div className="flex flex-col">
-            <div className="mb-6 shadow-md rounded-md overflow-hidden">
-              <img 
-                src="/lovable-uploads/d4728c89-990d-4535-8234-eb6afecc87bd.png" 
-                alt="ESPN streaming service" 
-                className="w-full object-cover"
-                style={{maxHeight: "250px", objectPosition: "100% 0%"}}
-              />
+          <Card className="flex flex-col overflow-hidden bg-white border-none">
+            <div className="mb-6 shadow-md rounded-lg overflow-hidden">
+              <AspectRatio ratio={16/9} className="bg-black">
+                <img 
+                  src="https://images.unsplash.com/photo-1579710758949-3ab56a3e6a33?q=80&w=1000&auto=format&fit=crop"
+                  alt="Sports streaming" 
+                  className="w-full h-full object-cover transition-transform hover:scale-105 duration-300"
+                />
+              </AspectRatio>
             </div>
             <h3 className="text-xl font-medium mb-3">Deportes en vivo y tus ligas preferidas en tu suscripción.</h3>
             <p className="text-gray-600 text-sm">
@@ -80,7 +90,7 @@ const StreamingOptions = () => {
             <div className="flex mt-6">
               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_logo.svg/2560px-ESPN_logo.svg.png" alt="ESPN logo" className="h-6 object-contain" />
             </div>
-          </div>
+          </Card>
         </div>
 
         {/* CTA Button */}

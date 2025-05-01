@@ -1,37 +1,34 @@
 
 import React from 'react';
+import { Card } from './ui/card';
+import { AspectRatio } from './ui/aspect-ratio';
 
 const ServiceShowcase = () => {
   const services = [
     {
       name: 'Internet Fibra Óptica',
-      image: '/lovable-uploads/41d8a8a7-65b0-4521-896e-0d1688ff975a.png',
-      imagePosition: '0% 20%',
-      width: '20%'
+      image: 'https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?q=80&w=1000&auto=format&fit=crop',
+      icon: 'https://cdn-icons-png.flaticon.com/512/1197/1197466.png'
     },
     {
-      name: 'Tv streaming',
-      image: '/lovable-uploads/41d8a8a7-65b0-4521-896e-0d1688ff975a.png',
-      imagePosition: '25% 20%',
-      width: '20%'
+      name: 'TV streaming',
+      image: 'https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1000&auto=format&fit=crop',
+      icon: 'https://cdn-icons-png.flaticon.com/512/2586/2586717.png'
     },
     {
       name: 'Música streaming',
-      image: '/lovable-uploads/41d8a8a7-65b0-4521-896e-0d1688ff975a.png',
-      imagePosition: '50% 20%',
-      width: '20%'
+      image: 'https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1000&auto=format&fit=crop',
+      icon: 'https://cdn-icons-png.flaticon.com/512/3059/3059884.png'
     },
     {
       name: 'Smart Home y CCTV',
-      image: '/lovable-uploads/41d8a8a7-65b0-4521-896e-0d1688ff975a.png',
-      imagePosition: '75% 20%',
-      width: '20%'
+      image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?q=80&w=1000&auto=format&fit=crop',
+      icon: 'https://cdn-icons-png.flaticon.com/512/1165/1165544.png'
     },
     {
       name: 'Gaming & e-sports',
-      image: '/lovable-uploads/41d8a8a7-65b0-4521-896e-0d1688ff975a.png',
-      imagePosition: '100% 20%',
-      width: '20%'
+      image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1000&auto=format&fit=crop',
+      icon: 'https://cdn-icons-png.flaticon.com/512/686/686589.png'
     }
   ];
 
@@ -42,20 +39,27 @@ const ServiceShowcase = () => {
           Nuestros servicios funcionan aún mejor juntos
         </h2>
         
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
           {services.map((service, index) => (
-            <div key={index} className="flex flex-col items-center">
-              <div className="bg-white rounded-lg shadow-md p-6 mb-4 w-full aspect-square flex items-center justify-center hover:shadow-lg transition-shadow">
-                <div 
-                  className="w-full h-full bg-contain bg-no-repeat bg-center"
-                  style={{
-                    backgroundImage: `url(${service.image})`,
-                    backgroundPosition: service.imagePosition
-                  }}
-                />
+            <Card key={index} className="flex flex-col items-center p-3 bg-white hover:shadow-lg transition-shadow cursor-pointer overflow-hidden border-none">
+              <div className="w-full rounded-lg overflow-hidden mb-4">
+                <AspectRatio ratio={1} className="bg-gradient-to-br from-click-teal/10 to-click-darkblue/10">
+                  <div className="w-full h-full relative flex items-center justify-center">
+                    <img 
+                      src={service.image} 
+                      alt={service.name}
+                      className="w-full h-full object-cover opacity-30 absolute inset-0"
+                    />
+                    <img 
+                      src={service.icon} 
+                      alt={`${service.name} icon`}
+                      className="w-16 h-16 z-10 filter drop-shadow-lg transition-transform hover:scale-110 duration-300"
+                    />
+                  </div>
+                </AspectRatio>
               </div>
               <p className="text-sm font-medium text-center">{service.name}</p>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
